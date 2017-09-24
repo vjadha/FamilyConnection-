@@ -1,0 +1,153 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Admin Registration-MY FAMILY BOOK</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="images/icon.ico" /> 
+<script type="text/javascript" src="iepngfix_tilebg.js"></script> 
+<script type="text/javascript" src="iepngfix.js"></script> 
+<style type="text/css">
+<!--
+.style3 {font-weight: bold; font-family: "Times New Roman", Times, serif; font-size: larger;}
+-->
+</style>
+<script language="javascript">
+	function setagelimit()
+	{
+		//alert("1");
+		document.getElementById("txtDOB").max="2000-01-01";
+	}
+</script>
+</head>
+
+<body onload="setagelimit()">
+<div id="mainWrap">
+<div id="mainPanel">
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <blockquote>
+    <blockquote>
+      <p align="center" class="style3">Admin Registration</p>
+    </blockquote>
+  </blockquote>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <form action="dbadmin.php" method="post" enctype="multipart/form-data" >
+    <table width="604" border="0" align="right">
+      <tr>
+        <th scope="col">&nbsp;</th>
+        <td scope="col"><label></label>
+            <label></label>
+            <label></label></td>
+      </tr>
+      <tr>
+        <th scope="row">Name</th>
+        <td><input type="text" name="txtfname"placeholder="First Name" pattern="[a-zA-z ]{4,20}" required />
+            <input type="text" name="txtlname"placeholder="Last Name"pattern="[a-zA-z]{4,20}" required /></td>
+      </tr>
+      <tr>
+        <th scope="row">Username </th>
+        <td><label></label>
+            <input name="txtuname" type="text" placeholder="@gmail.com"pattern="[a-zA-Z0-9]{1,10}@[a-zA-Z]{1,10}.(com|in|org|cc)"  /></td>
+      </tr>
+      <tr>
+        <th scope="row">Password </th>
+        <td><label></label>
+            <input type="password" name="txtpassword" id="txtpassword" required /></td>
+      </tr>
+      <tr>
+        <th scope="row">Confirm password </th>
+        <td><label></label>
+            <input type="password" name="txtpass" id="txtpass"  onblur="checkpwd()"/></td>
+      </tr>
+      <tr>
+        <th scope="row">BirthDate</th>
+        <td><label>
+          <input type="date" name="txtDOB" id="txtDOB" placeholder="DD/MM/YY"pattern="[0-9]{1,10}"/>
+        </label></td>
+      </tr>
+      <tr>
+        <th scope="row">Gender</th>
+        <td><label></label>
+            <select name="cmbgender">
+              <option value="male">male</option>
+              <option value="female">female</option>
+          </select></td>
+      </tr>
+      <tr>
+        <th scope="row">Mobile No </th>
+        <td><label></label>
+            <input type="text" name="txtmobno"placeholder="99-9999-9999" pattern="[0-9]{1,10}" required /></td>
+      </tr>
+      <tr>
+        <th scope="row">Address</th>
+        <td><label></label>
+            <textarea name="txtaddress" required ></textarea></td>
+      </tr>
+      <tr>
+        <th scope="row">Occupation</th>
+        <td><label></label>
+            <label></label>
+            <label>
+            <select name="cmbocc">
+              <option value="worker">worker</option>
+              <option value="Government job">Government job</option>
+              <option value="Engineer">Engineer</option>
+              <option value="Police  Officer ">Police Officer </option>
+            </select>
+          </label></td>
+      </tr>
+      <tr>
+        <th scope="row">Photo</th>
+        <td><label>
+          <input type="file" name="txtfile" />
+        </label></td>
+      </tr>
+      <tr>
+        <th scope="row">Securty question </th>
+        <td><label>
+          <select name="cmbsques" id="cmbsques">
+            <option value="What is your favourite actor">What is your favourite actor</option>
+            <option value="What is your favourite film">What is your favourite film</option>
+            <option value="What is your best friend birth date ">What is your best friend birth date </option>
+          </select>
+        </label></td>
+      </tr>
+      <tr>
+        <th scope="row">Answer</th>
+        <td><label>
+          <input name="txtans" type="text" id="txtans" required />
+        </label></td>
+      </tr>
+      <tr>
+        <th scope="row">&nbsp;</th>
+        <td><input type="submit" name="Submit" value="Submit" />
+            <input type="reset" name="Submit2" value="Reset" /></td>
+      </tr>
+    </table>
+  </form>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  </div>
+</div>
+</body>
+</html>

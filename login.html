@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LOGIN - MY FAMILY BOOK</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="images/icon.ico" /> 
+<script type="text/javascript" src="iepngfix_tilebg.js"></script> 
+<script type="text/javascript" src="iepngfix.js"></script> 
+</head>
+
+<body>
+<div id="mainWrap">
+  <div id="mainPanel">
+  
+
+    <h2 align="center">User Login</h2>
+    <form action="dblogin.php" method="post">
+      <div align="center"></div>
+      <div align="left"></div>
+      <table width="324" border="0" align="center">
+        <tr>
+          <th width="72" scope="col">UserName</th>
+          <td width="184" scope="col"><label>
+            <input type="text" name="txtuname" placeholder="abcd123@gmail.com"pattern="[a-zA-Z0-9]{1,10}@[a-zA-Z]{1,10}.(com|in|org|cc)"/>
+          </label>        </td>
+        </tr>
+        <tr>
+          <th>Password</th>
+          <td><label>
+            <input type="password" name="txtpass" />
+          </label>        </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td> <a href="forgotpass.php">Forget Password  </a></td>
+        </tr>
+        <tr>
+          <th>&nbsp;</th>
+		
+          <td> <a href="admin.html">New Registration</a></td>
+        </tr>
+        <tr>
+          <th>&nbsp;</th>
+          <td><label>
+            <input name="Login" type="submit" id="Login" value="Login" />
+          </label></td>
+        </tr>
+        <tr>
+		  
+          <th>&nbsp;</th>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </form>
+    <p>&nbsp;</p>
+    <p><a href="#"></a></p>
+    <a href="#" class="login"></a>
+    <div id="rightPanel"></div>
+ </div></div>
+</body>
+</html>
